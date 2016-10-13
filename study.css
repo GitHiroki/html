@@ -1,0 +1,21 @@
+p  {
+	color: white;
+}
+
+ul {
+	color: white;
+}
+
+h1 {
+	/*width: 900px;
+	height: 200px;*/
+    background-image: url(img/header03.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    color: #C3C0C0;
+}
+
+body {
+	background-color: black;
+}
