@@ -1,0 +1,105 @@
+#contents {
+    overflow: hidden;
+    width: 750px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+}
+
+#dropdownmenu {
+    width: 150px;
+    margin: 0;
+    padding: 0;   
+}
+
+#dropdownmenu li {
+    position: relative;
+    width: 150px;
+    height: 40px;
+}
+
+#dropdownmenu > li {
+    border-bottom: none;
+}
+
+#dropdownmenu li:last-child {
+    border-bottom: none;
+}
+
+#dropdownmenu li:hover > ul > li {
+    border-bottom: none;
+}
+
+#dropdownmenu li > ul > li {
+    border-bottom: none;
+}
+
+#dropdownmenu li a {
+    display: block;
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 2.8;
+    padding: 0 5px;
+    background: #9fb7d4;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#dropdownmenu li a:hover {
+    color: #fff;
+    background: #afc6e2;
+}
+
+#dropdownmenu > li:hover > a {
+    background: #afc6e2;
+    transition: 0.5s;
+}
+
+/* ここいらない */
+
+#dropdownmenu li:hover > ul > li {
+    overflow: visible;
+    top: -40px;
+    left: 110px;
+    height: 40px;
+}
+
+#dropdownmenu li ul li {
+    overflow: hidden;
+    height: 0;
+    left: 140px;
+    list-style: none;
+    transition: 0.2x;
+}
+
+#dropdownmenu li ul li a {
+    background: #9fb7d4;
+    transition: 0.5s;
+}
+
+#dropdownmenu li ul::before {
+    position: absolute;
+    content: "";
+    top: 14px;
+    left: 140px;
+    border: 5px solid transparent;
+    border-left: 5px solid #fff
+}
+
+/* ここいらない */
+
+.textcontent {
+    width: 600px;
+    height: 250px;
+    background: #eee;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    box-sizing: border-box;
+}
